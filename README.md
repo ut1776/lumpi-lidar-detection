@@ -13,7 +13,6 @@
 
 <p align="center">
   <a href="https://github.com/ut1776/lumpi-lidar-detection">Repository</a> ·
-  <a href="https://github.com/ut1776/lumpi-lidar-detection/tree/main/Video%20clip">LiDAR Video Demo</a> ·
   <a href="https://github.com/ut1776/lumpi-lidar-detection/tree/main/figures">Research Figures</a>
 </p>
 
@@ -29,22 +28,6 @@ Its purpose is to establish a transparent baseline, investigate object-localizat
 
 Rather than claiming state-of-the-art performance, LUMPI documents both its experimental results and the limitations that must be resolved before those results can support stronger conclusions.
 
-## 🎬 LiDAR Visualization
-
-Explore the animated vehicle and LiDAR simulation, including the driving scene, bird's-eye view, 3D point cloud, and rotating azimuth scan.
-
-<p align="center">
-  <a href="https://github.com/ut1776/lumpi-lidar-detection/blob/main/Video%20clip/LiDAR.mp4">
-    <img src="https://img.shields.io/badge/▶_WATCH-LiDAR_VIDEO_DEMO-00A6D6?style=for-the-badge&logo=github" alt="Watch LiDAR Video Demo">
-  </a>
-</p>
-
-**Video file:** [`Video clip/LiDAR.mp4`](Video%20clip/LiDAR.mp4)
-
-The animation illustrates the visualization pipeline and synthetic point-cloud behavior. It is a simulation, not a recording from a real vehicle-mounted LiDAR sensor.
-
----
-
 ## Research Highlights
 
 * **Classical 3D perception:** A baseline built from established geometric processing techniques.
@@ -55,7 +38,7 @@ The animation illustrates the visualization pipeline and synthetic point-cloud b
 * **Visual diagnostics:** Point clouds, bird's-eye views, proposal counts, detection errors, and prediction-versus-ground-truth comparisons.
 * **Scientific transparency:** Explicit documentation of uncertain annotation semantics, temporal alignment, coordinate conventions, and evaluation methodology.
 
-## 📊 Preliminary Experimental Results
+## Preliminary Experimental Results
 
 The initial experiment processed **31 scans from the Measurement5 subset**, generating 28,242 candidate proposals and evaluating 1,792 provisionally selected ground-truth boxes.
 
@@ -78,7 +61,7 @@ These measurements establish an initial diagnostic baseline—not a competitive 
 
 > **Evaluation disclaimer:** The annotation filter, scan-to-label temporal association, coordinate conventions, and axis-aligned 3D overlap calculation have not been independently verified against the dataset's authoritative specification. The reported metrics are preliminary internal measurements, not official benchmark scores.
 
-## 🔬 Detection Pipeline
+## Detection Pipeline
 
 The baseline follows six principal stages:
 
@@ -128,7 +111,7 @@ Candidate boxes are compared with ground-truth annotations using preliminary axi
 
 True positives, false positives, false negatives, precision, recall, F1, and per-scan behavior are examined to identify failure modes.
 
-## ⚙️ Experimental Configuration
+## Experimental Configuration
 
 | Parameter                      | Initial setting              |
 | ------------------------------ | ---------------------------- |
@@ -148,7 +131,7 @@ True positives, false positives, false negatives, precision, recall, F1, and per
 
 Parameter values are recorded experimental settings, not proven optima. Their interpretation depends on the dataset's coordinate system, units, annotation schema, and timestamp conventions.
 
-## 🖼️ Research Figures and Visual Diagnostics
+## Research Figures and Visual Diagnostics
 
 The [`figures/`](figures/) directory contains the visual diagnostics associated with the research paper.
 
@@ -214,7 +197,7 @@ Supports investigation of false-positive and false-negative behavior.
 
 **Figure integrity:** These figures are intended as diagnostics. Their plotted values and interpretation should be checked against the underlying experimental data and plotting code.
 
-## 📄 Research Paper
+## Research Paper
 
 The accompanying research paper is titled:
 
@@ -226,7 +209,7 @@ The paper's main conclusion is that the baseline can generate candidate regions 
 
 To compile the paper, place `main.tex` at the repository root and ensure the referenced figure files exist in `figures/`. Compile using an IEEE-compatible LaTeX environment.
 
-## 🚧 Current Limitations
+## Current Limitations
 
 The following issues must be addressed before stronger scientific or benchmark claims are justified.
 
@@ -239,7 +222,7 @@ The following issues must be addressed before stronger scientific or benchmark c
 * **Dataset coverage:** Thirty-one scans are insufficient to establish generalization across scenes and conditions.
 * **Research novelty:** Combining established filtering and clustering techniques does not, by itself, establish a new scientific contribution.
 
-## 🧭 Research Roadmap
+## Research Roadmap
 
 The next development phase prioritizes correctness before complexity.
 
@@ -256,7 +239,7 @@ The next development phase prioritizes correctness before complexity.
 * [ ] Compare against established baselines under consistent evaluation rules.
 * [ ] Conduct a literature and novelty review before making research novelty claims.
 
-## 📚 References
+## References
 
 1. M. Ester, H.-P. Kriegel, J. Sander, and X. Xu, “A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise,” KDD, 1996. [Paper](https://file.biolab.si/papers/1996-DBSCAN-KDD.pdf)
 2. A. Geiger, P. Lenz, and R. Urtasun, “Are We Ready for Autonomous Driving? The KITTI Vision Benchmark Suite,” CVPR, 2012. [DOI](https://doi.org/10.1109/CVPR.2012.6248074)
@@ -264,7 +247,7 @@ The next development phase prioritizes correctness before complexity.
 4. [Open3D Point Cloud Documentation](https://www.open3d.org/docs/release/tutorial/geometry/pointcloud.html)
 5. A. H. Lang et al., “PointPillars: Fast Encoders for Object Detection from Point Clouds,” CVPR, 2019. [Paper](https://openaccess.thecvf.com/content_CVPR_2019/html/Lang_PointPillars_Fast_Encoders_for_Object_Detection_From_Point_Clouds_CVPR_2019_paper.html)
 
-## 👤 Author
+## Author
 
 **Umar Tabbsum**
 Independent Researcher
@@ -273,7 +256,7 @@ GitHub: [@ut1776](https://github.com/ut1776)
 
 Project: [lumpi-lidar-detection](https://github.com/ut1776/lumpi-lidar-detection)
 
-## 📜 Project Status
+## Project Status
 
 LUMPI is an experimental research prototype. Its purpose is to establish a transparent baseline, expose methodological uncertainties, and support reproducible investigation into geometric LiDAR perception.
 
