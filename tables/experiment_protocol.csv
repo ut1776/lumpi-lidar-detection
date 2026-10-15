@@ -1,0 +1,16 @@
+Item,Value
+Project,LUMPI
+Task,Preliminary LiDAR 3D object-detection research prototype
+Baseline,Voxel filtering and DBSCAN clustering
+Evaluated measurement,Measurement5
+Scans processed,31
+Ground-truth boxes recorded,1792
+Detection proposals recorded,28242
+Proposals per scan: mean,911.03
+Proposals per scan: standard deviation,16.88
+Proposals per scan: minimum,869
+Proposals per scan: maximum,935
+Recorded score filter,score == 4; official semantics require verification
+Recorded scan timestamp mapping,scan_index / 10; alignment still requires validation
+IoU matching,Approximate axis-aligned 3D IoU; heading ignored
+Scope limitation,Only Measurement5 evaluated in the recorded run
